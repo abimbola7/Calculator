@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">                    
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <center class="text-light">
+        <div class="container-1  text-left">
+            <div class="header pt-1 pl-3">
+                <p style="font-size: 12px;">Calculator</p>
+            </div>
+            <div class="header-1 pl-3 pt-2 pr-4">
+                <div class="h">
+                    <i class="fa fa-bars"></i>
+                    <p class="px-3" style="font-weight: 500;">Standard</p>
+
+                </div>
+
+                <div class="h-1">
+                    <i class="fa fa-clock-rotate-left"></i>
+                </div>
+            </div>
+            <div class="display-min text-right pr-4">
+                <input type="text" style="background-color: transparent;" id="input1" class="text-light text-right" readonly>
+            </div>
+            <div class="display text-right pr-3 pt-3" id="display-1" style="font-weight: 400;">
+                <p class="display-4" id="display">0</p>
+            </div>
+            <div class="header-top mb-3">
+                <div class="">
+                    <button class="btn" >MC</button>    
+                </div>
+                <div class="">
+                    <button class="btn" >MR</button>    
+                </div>
+                <div class="">
+                    <button class="btn" >M+</button>    
+                </div>
+                <div class="">
+                    <button class="btn" >M-</button>    
+                </div>
+                <div class="">
+                    <button class="btn" >MS</button>    
+                </div>
+                <div class="">
+                    <button class="btn">M<sup><i class="fa fa-caret-down"></i></sup></button>    
+                </div> 
+            </div>
+            <div class="buttons px-1" style="margin-top: -5px;">
+                <div class="">
+                    <button class="btn" onclick="Percentage()">%</button>
+                </div>
+                <div class="">
+                    <button class="btn" onclick="clr('CE')">CE</button>
+                </div>
+                <div class="">
+                    <button class="btn" onclick="clr('C')">C</button>
+                </div>
+                <div class="">
+                    <button class="btn" onclick="Delete()"><i class="fa fa-delete-left"></i></button>
+                </div>
+                <div class="">
+                    <button class="btn" onclick="Inv()"><sup>1</sup>/<sub>x</sub></button>
+                </div>
+                <div class="">
+                    <button class="btn" onclick="Sqr()">x<sup>2</sup></button>
+                </div>
+                <div class="">
+                    <button class="btn" onclick="Sqrts()"><i class="fa fa-square-root-variable"></i></button>
+                </div>
+                <div class="">
+                    <button class="btn operators" onclick="Op('/')"><i class="fa fa-divide"></i></button>
+                </div>
+                <div class="">
+                    <button class="btn seven numval" onclick="Btn(7)" id="seven">7</button>
+                </div>
+                <div class="">
+                    <button class="btn eight numval" onclick="Btn(8)" id="eight">8</button>
+                </div>
+                <div class="">
+                    <button class="btn nine numval" onclick="Btn(9)" id="nine">9</button>
+                </div>
+                <div class="">
+                    <button class="btn operators" onclick="Op('*')" id="ops"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="">
+                    <button class="btn four numval" onclick="Btn(4)" id="four">4</button>
+                </div>
+                <div class="">
+                    <button class="btn five numval" onclick="Btn(5)" id="five">5</button>
+                </div>
+                <div class="">
+                    <button class="btn six numval" onclick="Btn(6)" id="six">6</button>
+                </div>
+                <div class="">
+                    <button class="btn operators" onclick="Op('-')"><i class="fa fa-minus"></i></button>
+                </div>
+                <div class="">
+                    <button class="btn one numval" onclick="Btn(1)" id="one">1</button>
+                </div>
+                <div class="">
+                    <button class="btn two numval" onclick="Btn(2)" id="two">2</button>
+                </div>
+                <div class="">
+                    <button class="btn three numval" onclick="Btn(3)" id="three">3</button>
+                </div>
+                <div class="">
+                    <button class="btn operators" onclick="Op('+')"><i class="fa fa-plus"></i></button>
+                </div>        
+                <div class="" >
+                    <button class="btn add" onclick="Negate()"><sup>+</sup>/<sub>-</sub></button>
+                </div>        
+                <div class="">
+                    <button class="btn zero numval" onclick="Btn(0)" id="zero">0</button>
+                </div>        
+                <div class="">
+                    <button class="btn dot" onclick="Btn('.')">.</button>
+                </div>        
+                <div class="">
+                    <button class="btn bg-danger" style="font-size: 15px;" onclick="Calc()" id="ops">=</button>
+                </div>        
+            </div>
+        </div>
+    </center>
+</body>
+<script src="calculator.js"></script>
+</html>

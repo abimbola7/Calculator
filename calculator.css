@@ -1,0 +1,96 @@
+body{
+    padding-top: 30px;
+}
+
+.container-1{
+    width: 420px;
+    height: 593px;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 4px 4px 10px black;
+}
+
+.header-1{
+    display: grid;
+    grid-template-columns: 50px 30px;
+    justify-content: space-between;
+}
+
+.header-1 .h{
+    display: flex;
+}
+
+.display{
+    height: 80px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+}
+.display::-webkit-scrollbar{
+    background-color: transparent;
+    height: 2px;
+}
+
+
+.header-top{
+    display: grid;
+    grid-template-columns: repeat(7, 65px);
+    gap: 5px;
+}
+
+.header-top div{
+    text-align: center;
+    padding: 7px;
+
+}
+
+
+.buttons{
+    /* width: 520px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 55px);
+    grid-gap: 2px 2px;
+}
+
+.buttons div{
+    justify-self: center;
+}
+
+.buttons button{
+    border-radius: 0px !important;
+    width: 100px !important;
+    height: 55px;
+    /* border: 2px solid white !important; */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: white;
+    background-color:#242323;
+}
+
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.add,.dot,.zero{
+    background-color: #131212 !important;
+}
+
+button:hover{
+    background-color: grey !important;
+}
+
+button:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: 0px 0px 0px transparent !important;
+}
+input{
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
+.header-top div button{
+    width: 65px;
+    background-color: transparent;
+    color: white;
+    border-radius: 0px;
+    font-size: 12px;
+}
+
